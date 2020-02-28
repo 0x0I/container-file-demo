@@ -1,0 +1,5 @@
+# test resource verification spec
+# service:
+#  example:
+#    enabled: true
+#    running: true
