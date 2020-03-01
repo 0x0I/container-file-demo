@@ -3,16 +3,18 @@ language: minimal
 services:
   - docker
 env:
-  - OS_VERSION=centos:7
-  - OS_VERSION=centos:8
-  - OS_VERSION=fedora:29
-  - OS_VERSION=fedora:30
-  - OS_VERSION=fedora:31
-  - OS_VERSION=debian:8
+  - OS_VERSION=centos-7
+  - OS_VERSION=centos-8
+  - OS_VERSION=fedora-29
+  - OS_VERSION=fedora-30
+  - OS_VERSION=fedora-31
+  - OS_VERSION=debian-8
 
 before_script:
   - sudo curl -fsSL https://goss.rocks/install | sudo sh
+  - sudo pip install ansible
+  - ansible-playbook builds/build-playbook.yml -v
 
 script:
-    - docker build --file Containerfile --build-arg OS_VERSION=${OS_VERSION} --tag testing-${OS_VERSION} .
-    - GOSS_FILES_PATH=test dgoss run --env OS_VERSION=${OS_VERSION} testing-${OS_VERSION} sleep infinity
+    - docker build --file builds/artifacts/${OS_VERSION}/Containerfile --tag testing-template:${OS_VERSION} .
+    - GOSS_FILES_PATH=test dgoss run testing-template:${OS_VERSION} sleep infinity
