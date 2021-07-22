@@ -18,19 +18,18 @@ For general information and guidelines for contributing to these Containerfiles 
 
 All [PRs](https://github.com/0x0I/container-file-template/pulls) are welcome! :+1: The following guidelines and CI pipeline are provided for validating container functionality and avoiding regressions for each submitted request:
 
-**Note:** to build and test this container/image, a working copy of either the `docker` or `podman` container runtimes/engines and the `dgoss` testing framework are necessary.
+**Note:** to build and test this container/image, a working copy of either the `docker` or `podman` container runtimes/engines are necessary.
 
 #### CI Pipeline
 
 | Step | Description | Dependencies | Command |
 | --- | --- | --- | --- |
-| :construction: `Container file build` | Leverages [Ansible](https://docs.ansible.com/) for defining variable build arguments, per *Containerfile* release/*Image OS distribution*, and building playbooks implementing the end-to-end Containerfile release process. | [ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) | `ansible-playbook builds/build-playbook.yml` |
-| :wrench: `integration testing` | Utilizing the Goss testing framework along with its associated `dgoss` extra package, integration testing of this container file is organized according to the various provisioning phases and should be executed prior to PR submission to validate new modifications and identify/prevent regressions. | [dgoss](https://github.com/aelsabbahy/goss/tree/master/extras/dgoss) | `test/integration_tests.sh` |
-| :traffic_light: `Continuous Integration (CI)` | Automatic E2E testing of this role is accomplished leveraging the [Travis-CI](https://travis-ci.com/0x0I/container-file-template) test infrastructure platform and is executed on each pull request. Requests should not be merged unless all tests pass or the community approves otherwise. | *N/A* | *see* [.travis.yml](https://github.com/0x0I/container-file-template/blob/master/.travis.yml) for additional details |
+| :wrench: `testing` | Utilizing the Goss testing framework, testing of this container file should be executed prior to PR submission to validate new modifications and identify/prevent regressions. | [dgoss](https://github.com/aelsabbahy/goss/tree/master/extras/dgoss) | `docker build --target test -t <tag>` |
+| :traffic_light: `Continuous Integration (CI)` | Automatic E2E testing of this role is accomplished leveraging the [Travis-CI](https://travis-ci.com/0x0I/container-file-template) test infrastructure platform and is executed on each pull request. Requests should not be merged unless all tests pass or the community approves otherwise. | *N/A* | *see* [.travis.yml](https://github.com/0x0I/container-file-demo/blob/master/.travis.yml) for additional details |
 
 ## Issues
 
-New GitHub issues can be [opened](https://github.com/0x0I/container-file-template/issues/new) and [tracked](https://github.com/0x0I/container-file-template/issues) in a similar fashion as with most Github repositories by making use of the standard Github issue management facilities.
+New GitHub issues can be [opened](https://github.com/0x0I/container-file-demo/issues/new) and [tracked](https://github.com/0x0I/container-file-demo/issues) in a similar fashion as with most Github repositories by making use of the standard Github issue management facilities.
 
 Reference the following issue reporting guide for more details:
 
