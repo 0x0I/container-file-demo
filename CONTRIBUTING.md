@@ -24,8 +24,8 @@ All [PRs](https://github.com/0x0I/container-file-template/pulls) are welcome! :+
 
 | Step | Description | Dependencies | Command |
 | --- | --- | --- | --- |
-| :wrench: `testing` | Utilizing the Goss testing framework, testing of this container file should be executed prior to PR submission to validate new modifications and identify/prevent regressions. | [dgoss](https://github.com/aelsabbahy/goss/tree/master/extras/dgoss) | `docker build --target test -t <tag>` |
-| :traffic_light: `Continuous Integration (CI)` | Automatic E2E testing of this role is accomplished leveraging the [Travis-CI](https://travis-ci.com/0x0I/container-file-template) test infrastructure platform and is executed on each pull request. Requests should not be merged unless all tests pass or the community approves otherwise. | *N/A* | *see* [.travis.yml](https://github.com/0x0I/container-file-demo/blob/master/.travis.yml) for additional details |
+| :wrench: `testing` | Utilizing the [Goss](https://github.com/aelsabbahy/goss/tree/master/extras/dgoss) testing framework, testing of this container file should be executed prior to PR submission to validate new modifications and identify/prevent regressions. | *N/A* | `docker build --target test -t <tag> && docker run <tag>` |
+| :traffic_light: `Continuous Integration (CI)` | Automatic E2E testing of this role is accomplished leveraging the [Circle-CI](https://app.circleci.com/pipelines/github/0x0I/container-file-demo) test infrastructure platform and is executed on each pull request. Requests should not be merged unless all tests pass or the community approves otherwise. | *N/A* | *see* [.circle.yml](https://raw.githubusercontent.com/0x0I/container-file-demo/master/.circleci/config.yml) for additional details |
 
 ## Issues
 
@@ -44,7 +44,7 @@ Reference the following issue reporting guide for more details:
 
 ## Workflow and backlog
 
-Reference this repository's [wiki](https://github.com/0x0I/container-file-template/wiki) to visualize the project roadmap, workflow and backlog to stay up to speed with development  plans and work in progress.
+Reference this repository's [wiki](https://github.com/0x0I/container-file-demo/wiki) to visualize the project roadmap, workflow and backlog to stay up to speed with development  plans and work in progress.
 
 ## Code of Conduct
 
