@@ -4,7 +4,7 @@
 Container File :zero::one: Template
 =========
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/0x0I/container-file-template?color=yellow)
-[![Build Status](https://travis-ci.org/0x0I/container-file-template.svg?branch=master)](https://travis-ci.org/0x0I/container-file-template)
+[![0x0I](https://circleci.com/gh/0x0I/container-file-demo.svg?style=svg)](https://circleci.com/gh/0x0I/container-file-demo)
 
 **Table of Contents**
   - [Environment Variables](#environment-variables)
@@ -57,6 +57,6 @@ Author Information
 
 This Containerfile was created in 2021 by O1.IO.
 
-*** always happy to help & donations are always welcome ***
+🏆 **always happy to help & donations are always welcome** 💸
 
-Eth: 0x652eD9d222eeA1Ad843efec01E60C29bF2CF6E4c
+**Eth:** 0x652eD9d222eeA1Ad843efec01E60C29bF2CF6E4c
