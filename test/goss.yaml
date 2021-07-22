@@ -6,7 +6,7 @@ file:
     group: root
     filetype: file
     contains:
-      - "Welcome world, to infinity and beyond!"
+      - "Welcome {{.Env.DEMO_USER}}, to infinity and beyond!"
   /etc/apache2/sites-available/demo.conf:
     exists: true
     mode: "0644"
@@ -23,9 +23,8 @@ file:
     filetype: symlink
 http:
   http://demo.01labs.net:
-    # required attributes
     status: 200
-    body: [ "Welcome world, to infinity and beyond!" ]
+    body: [ "Welcome {{.Env.DEMO_USER}}, to infinity and beyond!" ]
     method: GET
 service:
  apache2:
