@@ -56,3 +56,7 @@ Author Information
 ------------------
 
 This Containerfile was created in 2021 by O1.IO.
+
+*** always happy to help & donations are always welcome ***
+
+Eth: 0x652eD9d222eeA1Ad843efec01E60C29bF2CF6E4c
