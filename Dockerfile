@@ -32,7 +32,7 @@ COPY test /test
 
 CMD ["goss", "--gossfile", "/test/goss.yaml", "validate"]
 
-# ******* Stage: main ******* #
-FROM base
+# ******* Stage: release ******* #
+FROM base as release
 
 CMD ["curl", "demo.01labs.net"]

@@ -16,7 +16,7 @@ For general information and guidelines for contributing to these Containerfiles 
 
 ## Pull Requests
 
-All [PRs](https://github.com/0x0I/container-file-template/pulls) are welcome! :+1: The following guidelines and CI pipeline are provided for validating container functionality and avoiding regressions for each submitted request:
+All [PRs](https://github.com/0x0I/container-file-demo/pulls) are welcome! :+1: The following guidelines and CI pipeline are provided for validating container functionality and avoiding regressions for each submitted request:
 
 **Note:** to build and test this container/image, a working copy of either the `docker` or `podman` container runtimes/engines are necessary.
 

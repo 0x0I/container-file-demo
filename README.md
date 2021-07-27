@@ -3,7 +3,7 @@
 
 Container File :zero::one: Demo
 =========
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/0x0I/container-file-template?color=yellow)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/0x0I/container-file-demo?color=yellow)
 [![0x0I](https://circleci.com/gh/0x0I/container-file-demo.svg?style=svg)](https://circleci.com/gh/0x0I/container-file-demo)
 
 **Table of Contents**

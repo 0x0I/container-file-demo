@@ -1,7 +1,7 @@
 filepath        :=      $(PWD)
 versionfile     :=      $(filepath)/version.txt
 version         :=      $(shell cat $(versionfile))
-image_repo      :=      0labs/demo-container
+image_repo      :=      0labs/demo
 
 build:
 	docker build -t $(image_repo):$(version) .
