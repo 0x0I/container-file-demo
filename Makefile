@@ -17,4 +17,4 @@ latest:
 	docker tag $(image_repo):$(version) $(image_repo):latest
 	docker push $(image_repo):latest
 
-.PHONY: test
+.PHONY: build test release latest
