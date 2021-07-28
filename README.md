@@ -9,7 +9,6 @@ Container File :zero::one: Demo
 **Table of Contents**
   - [Environment Variables](#environment-variables)
       - [Config](#config)
-      - [Launch](#launch)
       - [Operations](#operations)
   - [Example Run](#example-run)
   - [License](#license)
@@ -21,22 +20,22 @@ Environment Variables
 --------------
 Variables are available and organized according to the following software & machine provisioning stages:
 * _config_
-* _launch_
 * _operations_
 
-...
 
 #### Config
 
-...*description of configuration related vars*...
-
-#### Launch
-
-...*description of launch related vars*...
+...*description of service configuration (i.e. as set within a config file) related vars*...
 
 #### Operations
 
 ...*description of operations and adhoc tasks related vars*...
+
+e.g.
+
+`$DEMO_USER` **default**: *world*
+
+* username to say hello to when visiting the demo website!
 
 Example Run
 ----------------

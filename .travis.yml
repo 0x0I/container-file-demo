@@ -4,5 +4,5 @@ services:
   - docker
 
 script:
-    - docker build --target test --tag container-demo:test .
-    - docker run container-demo:test
+    - docker build --target test --tag demo:test .
+    - docker run demo:test
