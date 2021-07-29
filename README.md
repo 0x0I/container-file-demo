@@ -43,7 +43,7 @@ default example:
 ```
 docker run - \
   --env DEMO_USER=<user> \
-  0labs/container-demo:<tag> \
+  0labs/demo:<tag> \
 ```
 
 License
