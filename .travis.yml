@@ -4,5 +4,4 @@ services:
   - docker
 
 script:
-    - docker build --target test --tag demo:test .
-    - docker run demo:test
+    - make test

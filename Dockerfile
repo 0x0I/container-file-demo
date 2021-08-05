@@ -1,5 +1,4 @@
 ARG base_version="ubuntu:21.04"
-ARG goss_version=v0.3.16
 
 # ******* Stage: base ******* #
 FROM ${base_version} as base
@@ -24,6 +23,8 @@ ENTRYPOINT ["demo-entrypoint"]
 
 # ******* Stage: testing ******* #
 FROM base as test
+
+ARG goss_version=v0.3.16
 
 RUN curl -fsSL https://goss.rocks/install | GOSS_VER=${goss_version} GOSS_DST=/usr/local/bin sh
 
