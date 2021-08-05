@@ -10,7 +10,7 @@ Container File :zero::one: Demo
   - [Environment Variables](#environment-variables)
       - [Config](#config)
       - [Operations](#operations)
-  - [Example Run](#example-run)
+  - [Examples](#examples)
   - [License](#license)
   - [Author Information](#author-information)
 
@@ -37,7 +37,7 @@ e.g.
 
 * username to say hello to when visiting the demo website!
 
-Example Run
+Examples
 ----------------
 default example:
 ```

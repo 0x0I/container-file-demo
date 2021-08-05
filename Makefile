@@ -10,7 +10,7 @@ test:
 	docker build --target test -t demo:test . && docker run demo:test
 
 release:
-	docker build --network host --no-cache -t $(image_repo):$(version) .
+	docker build --no-cache -t $(image_repo):$(version) .
 	docker push $(image_repo):$(version)
 
 latest:
