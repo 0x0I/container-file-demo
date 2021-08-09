@@ -1,3 +1,4 @@
+ARG launch_target=release
 ARG base_version="ubuntu:21.04"
 
 # ******* Stage: base ******* #
@@ -36,4 +37,14 @@ CMD ["goss", "--gossfile", "/test/goss.yaml", "validate"]
 # ******* Stage: release ******* #
 FROM base as release
 
+#      web
+#       ↓
+EXPOSE 80
+
 CMD ["curl", "demo.01labs.net"]
+
+# ******* Set resultant image state based on launch target ******* #
+
+FROM ${launch_target} AS after-condition
+
+FROM after-condition
