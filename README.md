@@ -10,6 +10,7 @@ Container File :zero::one: Demo
 
 **Table of Contents**
   - [Build](#build)
+      - [targets](#targets)
   - [Config](#config)
       - [port mappings](#port-mappings)
   - [Operations](#operations)
@@ -30,17 +31,12 @@ Guidelines on running <insert-application> containers are available and organize
 
 ...*steps for building <insert-service> container images based on various use-cases/targets*...
 
-e.g.
+##### targets
 
-
-
-**launch_targets**
-
-
-
-* `test`: image containing service binaries, test tools and functional test cases for validation
-
-* `release`: minimal resultant image containing service binaries, entrypoints and helper scripts necessary for operations
+| Name  | description |
+| ------------- | ------------- |
+| `test`    | image containing service binaries, test tools and functional test cases for validation |
+| `release` | minimal resultant image containing service binaries, entrypoints and helper scripts |
 
 ```bash
 docker build --target <target> .
@@ -49,8 +45,6 @@ docker build --target <target> .
 #### Config
 
 ...*description of <insert-service> container instance configuration options*...
-
-e.g.
 
 `$DEMO_USER` **default**: *world*
 
