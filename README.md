@@ -5,31 +5,50 @@ Container File :zero::one: Demo
 =========
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/0x0I/container-file-template?color=yellow)
 [![0x0I](https://circleci.com/gh/0x0I/container-file-demo.svg?style=svg)](https://circleci.com/gh/0x0I/container-file-demo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/0labs/demo?style=flat)](https://hub.docker.com/repository/docker/0labs/demo)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 
 **Table of Contents**
-  - [Environment Variables](#environment-variables)
-      - [Config](#config)
-      - [Operations](#operations)
+  - [Build](#build)
+  - [Config](#config)
+      - [port mappings](#port-mappings)
+  - [Operations](#operations)
   - [Examples](#examples)
   - [License](#license)
   - [Author Information](#author-information)
 
 ...description of Container file...
 
-Environment Variables
+Setup
 --------------
-Variables are available and organized according to the following software & machine provisioning stages:
+Guidelines on running <insert-application> containers are available and organized according to the following software & machine provisioning stages:
+* _build_
 * _config_
 * _operations_
 
+#### Build
+
+...*steps for building <insert-service> container images based on various use-cases/targets*...
+
+e.g.
+
+
+
+**launch_targets**
+
+
+
+* `test`: image containing service binaries, test tools and functional test cases for validation
+
+* `release`: minimal resultant image containing service binaries, entrypoints and helper scripts necessary for operations
+
+```bash
+docker build --target <target> .
+```
 
 #### Config
 
-...*description of service configuration (i.e. as set within a config file) related vars*...
-
-#### Operations
-
-...*description of operations and adhoc tasks related vars*...
+...*description of <insert-service> container instance configuration options*...
 
 e.g.
 
@@ -37,13 +56,23 @@ e.g.
 
 * username to say hello to when visiting the demo website!
 
+##### port mappings
+
+...*network ports service containers listen on for various functions and details involving operator customizations*...
+
+| Port  | mapping description | type |config setting | command-line flag |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| `80`    | Apache web server | *TCP*  | `-` | `-` |
+
+#### Operations
+
+...*guidelines for performing operational tasks on <insert-service> container instances*...
+
 Examples
 ----------------
 default example:
 ```
-docker run - \
-  --env DEMO_USER=<user> \
-  0labs/demo:<tag> \
+docker run --env DEMO_USER=<user> 0labs/demo:<tag>
 ```
 
 License

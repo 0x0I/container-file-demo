@@ -36,4 +36,8 @@ CMD ["goss", "--gossfile", "/test/goss.yaml", "validate"]
 # ******* Stage: release ******* #
 FROM base as release
 
+#      web
+#       ↓
+EXPOSE 80
+
 CMD ["curl", "demo.01labs.net"]
