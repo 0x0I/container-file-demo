@@ -5,6 +5,8 @@ Container File :zero::one: Demo
 =========
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/0x0I/container-file-template?color=yellow)
 [![0x0I](https://circleci.com/gh/0x0I/container-file-demo.svg?style=svg)](https://circleci.com/gh/0x0I/container-file-demo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/0labs/demo?style=flat)](https://hub.docker.com/repository/docker/0labs/demo)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 
 **Table of Contents**
   - [Build](#build)
@@ -29,6 +31,12 @@ Guidelines on running <insert-application> containers are available and organize
 ...*steps for building <insert-service> container images based on various use-cases/targets*...
 
 e.g.
+
+
+
+**launch_targets**
+
+
 
 * `test`: image containing service binaries, test tools and functional test cases for validation
 

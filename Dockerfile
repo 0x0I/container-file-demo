@@ -1,4 +1,3 @@
-ARG launch_target=release
 ARG base_version="ubuntu:21.04"
 
 # ******* Stage: base ******* #
@@ -42,9 +41,3 @@ FROM base as release
 EXPOSE 80
 
 CMD ["curl", "demo.01labs.net"]
-
-# ******* Set resultant image state based on launch target ******* #
-
-FROM ${launch_target} AS after-condition
-
-FROM after-condition
