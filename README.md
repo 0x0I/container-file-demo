@@ -12,10 +12,8 @@ Container File :zero::one: Demo
 
 **Overview**
   - [Setup](#setup)
-      - [Build](#build)
-          - [targets](#targets)
-      - [Config](#config)
-          - [port mappings](#port-mappings)
+    - [Build](#build)
+    - [Config](#config)
   - [Operations](#operations)
   - [Examples](#examples)
   - [License](#license)
