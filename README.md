@@ -55,8 +55,8 @@ docker build --target <target> .
 
 ...*network ports service containers listen on for various functions and details involving operator customizations*...
 
-| Port  | mapping description | type |config setting | command-line flag |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Port  | mapping description | type | config setting | command-line flag |
+| ------------- | ------------- | ------------- | :-------------: | :-------------: |
 | `80`    | Apache web server | *TCP*  | `-` | `-` |
 
 #### Operations
