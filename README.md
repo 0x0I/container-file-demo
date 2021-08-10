@@ -8,30 +8,31 @@ Container File :zero::one: Demo
 [![Docker Pulls](https://img.shields.io/docker/pulls/0labs/demo?style=flat)](https://hub.docker.com/repository/docker/0labs/demo)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blueviolet.svg)](https://opensource.org/licenses/MIT)
 
-**Table of Contents**
-  - [Build](#build)
-      - [targets](#targets)
-  - [Config](#config)
-      - [port mappings](#port-mappings)
+...description of the application or service...
+
+**Overview**
+  - [Setup](#setup)
+      - [Build](#build)
+          - [targets](#targets)
+      - [Config](#config)
+          - [port mappings](#port-mappings)
   - [Operations](#operations)
   - [Examples](#examples)
   - [License](#license)
   - [Author Information](#author-information)
 
-...description of Container file...
-
-Setup
+#### Setup
 --------------
-Guidelines on running <insert-application> containers are available and organized according to the following software & machine provisioning stages:
+Guidelines on running service containers are available and organized according to the following software & machine provisioning stages:
 * _build_
 * _config_
 * _operations_
 
-#### Build
+##### Build
 
-...*steps for building <insert-service> container images based on various use-cases/targets*...
+...*steps for building container images based on various use-cases/targets*...
 
-##### targets
+###### targets
 
 | Name  | description |
 | ------------- | ------------- |
@@ -42,15 +43,15 @@ Guidelines on running <insert-application> containers are available and organize
 docker build --target <target> .
 ```
 
-#### Config
+##### Config
 
-...*description of <insert-service> container instance configuration options*...
+...*description of service container instance configuration options*...
 
 `$DEMO_USER` **default**: *world*
 
 * username to say hello to when visiting the demo website!
 
-##### port mappings
+###### port mappings
 
 ...*network ports service containers listen on for various functions and details involving operator customizations*...
 
@@ -60,7 +61,7 @@ docker build --target <target> .
 
 #### Operations
 
-...*guidelines for performing operational tasks on <insert-service> container instances*...
+...*guidelines for performing operational tasks on service container instances*...
 
 Examples
 ----------------
